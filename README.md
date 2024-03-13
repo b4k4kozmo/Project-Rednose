@@ -5,6 +5,8 @@
 \/    |_|  \___// |\___|\___|\__(_) \/ \_/\__/___,'\_\ \/\___/  \__/\__/  
               |__/                                                        
 
+view readme in raw mode for best experience
+
 Time is flowing constantly, feeling as if it is constantly moving faster and faster as we grow.
 
 This program takes into account how the perception of time changes as we grow older using a simple equation to compare:
