@@ -1,15 +1,15 @@
 #include <iostream>
 
-int xA, yA, t, xP;
+float xA, yA, t, yP;
 char units[6] = "units";
 
 void setValues()
 {
     std::cout<<"Enter the age you want to check the perception of"<<std::endl;
-    std::cin>>xA;
+    std::cin>>yA;
     std::cout<<std::endl;
     std::cout<<"Enter the age you want to compare it to"<<std::endl;
-    std::cin>>yA;
+    std::cin>>xA;
     std::cout<<std::endl;
     std::cout<<"Type a unit of time"<<std::endl;
     std::cin>>units;
@@ -19,21 +19,21 @@ void setValues()
     std::cin>>t;
     std::cout<<std::endl;
 }
-int calculateP()
+float calculateP()
 {
     return (xA/yA * t);
 }
 
 int main() {
     setValues();
-    xP = calculateP();
+    yP = calculateP();
     std::cout<<t<<" ";
     std::cout<<units;
-    std::cout<<" for a "<<yA;
-    std::cout<<" year old would feel like "<<xP;
+    std::cout<<" for a "<<xA;
+    std::cout<<" year old would feel like "<<yP;
     std::cout<<" ";
     std::cout<<units;
-    std::cout<<" to a "<<xA;
+    std::cout<<" to a "<<yA;
     std::cout<<" year old."<<std::endl;
     return 0;
 }
