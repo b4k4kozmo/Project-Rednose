@@ -1,6 +1,6 @@
 #include <iostream>
 
-float xA, yA, t, yP;
+double xA, yA, t, yP;
 char units[6] = "units";
 
 void setValues()
@@ -31,6 +31,8 @@ void setValues()
     std::cout<<std::endl;
     std::cout<<"Type a unit of time"<<std::endl;
     std::cin>>units;
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout<<std::endl;
     std::cout<<"Enter an amount of ";
     std::cout<<units<<std::endl;
@@ -43,6 +45,8 @@ void setValues()
         std::cout<<units<<std::endl;
         std::cin>>t;
     }
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout<<std::endl;
 }
 float calculateP()
