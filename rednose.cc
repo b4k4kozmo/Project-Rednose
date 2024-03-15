@@ -9,15 +9,18 @@ void setValues()
     std::cin>>yA;
     while (std::cin.fail()){
         std::cin.clear();
-        std::cout<<"Enter the age you want to check the perception of"<<std::endl;
+        std::cout<<"That's not a number try again."<<std::endl;
+        std::cout<<"Enter the age you want to check the perception of:"<<std::endl;
         std::cin>>yA;
     }
     std::cout<<std::endl;
-    std::cout<<"Enter the age you want to compare it to"<<std::endl;
+    std::cout<<"That's not a number try again."<<std::endl;
+    std::cout<<"Enter the age you want to compare it to:"<<std::endl;
     std::cin>>xA;
     while (std::cin.fail()){
         std::cin.clear();
-        std::cout<<"Enter the age you want to compare it to"<<std::endl;
+        std::cout<<"That's not a number try again."<<std::endl;
+        std::cout<<"Enter the age you want to compare it to:"<<std::endl;
         std::cin>>xA;
     }
     std::cout<<std::endl;
@@ -30,6 +33,7 @@ void setValues()
     while (std::cin.fail()){
         std::cin.clear();
         std::cin.ignore();
+        std::cout<<"That's not a number try again."<<std::endl;
         std::cout<<"Enter an amount of ";
         std::cout<<units<<std::endl;
         std::cin>>t;
